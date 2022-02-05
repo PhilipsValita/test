@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/mystyle.css">
+    <link rel="stylesheet" href="/public/css/sidebar.css">
+    <link rel="stylesheet" href="/public/css/modal.css">
+    <link rel="stylesheet" href="/public/css/page-note.css">
+    <title>Notes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/views/page-public.html" class="itens">Public notes</a>
+                <a href="/views/page-notes.html" class="itens local">Notes</a>
+                <a href="/views/page-folder.html" class="itens local">Folder</a>
+            </div>
+        </nav>
+        <h2><a href="/views/page-home.html">Notepads</a></h2>
+    </header>
+    <main>
+        <section class="blocknote-note" id="blocknote-note">
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            <article class="notes" id="makenote">
+                <h3 class="title">Teste</h3>
+            </article>
+            
+        </section>
+        <nav>
+            <button class="newbutton" id="newbutton">
+                <span id="vertical"></span>
+                <span id="horizontal"></span>
+            </button>
+            <div class="modal-container" id="modal">
+                <div class="itens">
+                    <button type="radio" class="itens"><a href="/views/page-writenote.html">New Note</a></button>
+                    <button type="radio" class="itens"><a href="/views/page-makefolder.html">New Folder</a></button>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <footer>
+    </footer>
+    <script src="/public/js/sidebar.js"></script>
+    <script src="/public/js/modal.js"></script>
+</body>
+</html>

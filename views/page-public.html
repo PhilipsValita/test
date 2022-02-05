@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/mystyle.css">
+    <link rel="stylesheet" href="/public/css/sidebar.css">
+    <link rel="stylesheet" href="/public/css/modal.css">
+    <title>Public Notes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/views/page-public.html" class="itens">Notes</a>
+                <a href="/views/page-files.html" class="itens local">Folders</a>
+                <a href="/views/page-home.html" class="itens local">Local</a>
+            </div>
+        </nav>
+        <h2>Public Notes</h2>
+    </header>
+    <main>
+        <section class="blocknote" id="blocknote">
+            <article class="note" id="note">
+            </article>
+        </section>
+        <nav>
+            <button class="newbutton" id="newbutton">
+                <span id="vertical"></span>
+                <span id="horizontal"></span>
+            </button>
+            <div class="modal-container" id="modal">
+                <div class="itens">
+                    <button type="radio" class="itens"><a href="/views/page-writenote.html">New Note</a></button>
+                    <button type="radio" class="itens"><a href="/views/page-makefolder.html">New Folder</a></button>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <footer>
+    </footer>
+    <script src="/public/js/sidebar.js"></script>
+    <script src="/public/js/modal.js"></script>
+</body>
+</html>
