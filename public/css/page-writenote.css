@@ -1,0 +1,16 @@
+body {
+    overflow: hidden;
+}
+textarea {
+    color: var(--background);
+    display: flex;
+    width: 82vw;
+    height: 85vh;
+    background: var(--blocknote);
+    margin: auto;
+    resize: none;
+    outline: 0;
+}
+textarea[placeholder] {
+    margin-left: 9px;
+}

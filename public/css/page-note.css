@@ -1,0 +1,35 @@
+/*Page-Notes*/
+.blocknote-note {
+    display: flex;
+    margin: 10px 95px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.notes {
+    display: block;
+    color: var(--background);
+    background: var(--blocknote);
+    width: 200px;
+    height: 170px;
+    margin-top: 80px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.title {
+    color: var(--input);
+    margin: 20px;
+}
+
+/*Responsive*/
+@media screen and (max-width:1200px){
+    .notes {
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .notes {
+        width: 40%;
+    }
+}

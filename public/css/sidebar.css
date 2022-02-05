@@ -1,0 +1,50 @@
+.sidenav {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: var(--button);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+  }
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    margin-left: 0.8rem;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--blocknote);
+    display: block;
+    transition: 0.1s;
+  }
+  .sidenav a:hover {
+    color: #f2f5f9;
+  }
+  .sidenav .itens {
+      margin-top: 2.4rem;
+      margin-bottom: 1.8rem;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 64px;
+    font-weight: normal;
+  }
+  span {
+    display: flex;
+    margin: 1.5rem;
+    margin-top: 1.7rem;
+    margin-left: 0.6rem;
+  }
+  header h2 {
+      margin-top: 1.8rem;
+      margin-left: 0.9rem;
+      font-size: 28px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

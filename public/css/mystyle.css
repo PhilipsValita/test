@@ -1,0 +1,26 @@
+:root {
+    /*Design Patterns*/
+    --background: #2d3945;
+    --button: #465866;
+    --input: #5c6f75;
+    --blocknote: #a2a7ba;
+    --title-color: #bbc1cd;
+    background: var(--background);
+    font-family: 'Ubuntu', sans-serif;
+}
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Config Header*/
+header {
+    margin: 0;
+    width: 100vw;
+    background-color: var(--background);
+    display: flex;
+    color: var(--title-color);
+    margin-left: 1.8rem;
+}
+header a {
+    text-decoration: none;
+    color: var(--title-color);
+}
