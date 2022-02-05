@@ -1,0 +1,17 @@
+.blocknote-folder {
+    display: grid;
+    margin: 10px 95px;
+}
+.folder {
+    margin-left: 300px;
+    display: flex;
+    width: 50%;
+    height: 65px;
+    margin: 10px;
+    background-color: var(--blocknote);
+    color: var(--input);
+}
+.folder h3 {
+    margin-left: 30px;
+    justify-content: center;
+}

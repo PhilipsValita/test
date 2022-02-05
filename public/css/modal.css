@@ -1,0 +1,68 @@
+/*Modal*/
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.modal-container .active {
+    display: block;
+}
+main a {
+    margin: auto;
+    font-size: 12pt;
+    text-decoration: none;
+    color: var(--background);
+}
+nav button {
+    display: grid;
+    justify-content: center;
+    margin: 0.5rem;
+    width: 240px;
+    height: 65px;
+    background: var(--blocknote);
+    border: 0;
+    outline: 0;
+    transition: 200ms;
+}
+button:hover {
+    background: #b7bfd6;
+}
+/*NewButton*/
+.newbutton {
+  position: fixed;
+  bottom: 0.1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background: var(--blocknote);
+  cursor: pointer;
+}
+button #horizontal {
+    position: fixed;
+    display: flex;
+    bottom: 0.5rem;
+    left: 6px;
+    width: 2.4rem;
+    height: 0.3rem;
+    border-radius: 20px;
+    background: var(--input);
+}
+button #vertical {
+    position: fixed;
+    display: flex;
+    right: 10px;
+    bottom: -10px;
+    width: 0.2rem;
+    height: 2.4rem;
+    border-radius: 20px;
+    background: var(--input);
+}
+.newbutton:hover {
+    background: #b7bfd6;
+}
